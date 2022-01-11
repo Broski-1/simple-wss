@@ -1,2 +1,1 @@
-# simple-wss
-Simple Websocket Sender/Receiver
+# Simple Websocket Sender/Receiver
