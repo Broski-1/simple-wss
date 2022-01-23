@@ -1,7 +1,10 @@
 import asyncio
 import websockets
+import argparse
 
-wss = input('Websocket URI: ')
+parser = argparse.ArgumentParser()
+parser.add_argument('wss', help='Websocket URI', type=str)
+args = parser.parse_args()
 
 # set to false if you do not want to use secure sockets layer
 ssl = True
@@ -11,7 +14,7 @@ file = open('logfile.txt', 'w')
 file.truncate()
 
 async def websocket():
-    async with websockets.connect(wss, ssl=ssl) as socket:
+    async with websockets.connect(args.wss, ssl=ssl) as socket:
             # while we have a conntection to the socket
             while socket:
                 x = input('> ')
