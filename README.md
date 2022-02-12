@@ -2,7 +2,7 @@
 
 Installation
 
-`git clone https://github.com/Broski-1/simple-wss/`
+`git clone https://github.com/BroskiSec/simple-wss/`
 
 `cd simple-wss`
 
